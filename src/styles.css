@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.fc .fc-button-primary{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.fc .fc-toolbar-title{
+    display: inline;
+}
+.fc .fc-button:not(:disabled){
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active{
+    background-color: white;
+    color: black;
+    border: none;
+}
