@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .fc .fc-button-primary{
     background-color: white;
@@ -20,4 +22,45 @@
     background-color: white;
     color: black;
     border: none;
+}
+
+.fc .fc-scrollgrid-liquid {
+    height: 100%;
+    border-radius: 16px;
+}
+.fc-scroller {
+    /* Add your custom styles for the scrolling container */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: 1px; /* Customize the width of the scrollbar (optional) */
+    scrollbar-color: #888888 #dddddd; /* Customize the colors of the scrollbar (optional) */
+  }
+
+  .fc-timegrid-axis-frame{
+   
+  }
+  .fc .fc-timegrid-axis-frame{
+    padding:20px
+  }
+  .fc-timegrid-axis{
+    padding: 20px;
+  }
+   col {
+    width: 100px !important;
+  }
+
+   .fc-day{
+    padding: 20px !important;
+  }
+  .fc .fc-timegrid-slot-minor{
+    display: none;
+  }
+  .fc-direction-ltr .fc-timegrid-slot-label-frame {
+    text-align: center;
+}
+.custom-content{
+    color: #4B419F;
+}
+.custom-content2{
+    color: #4B419F;
+    font-size: 30px;
 }
