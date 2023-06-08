@@ -39,13 +39,13 @@
    
   }
   .fc .fc-timegrid-axis-frame{
-    padding:20px
-  }
+    padding:20px;
+      }
   .fc-timegrid-axis{
     padding: 20px;
   }
    col {
-    width: 100px !important;
+    width: 120px !important;
   }
 
    .fc-day{
@@ -63,4 +63,46 @@
 .custom-content2{
     color: #4B419F;
     font-size: 30px;
+}
+.draggable-event {
+  cursor: ew-resize;
+}
+
+.fc-timegrid-axis-cushion {
+  display: none;
+}
+.fc-timegrid-axis-frame-liquid{
+  padding: 0 !important;
+}
+
+.fc .fc-timegrid-slot-label {
+  display: none;
+}
+.fc .fc-timegrid-slot {
+ display: none;
+}
+.fc .fc-timegrid-now-indicator-container {
+ display: none;
+}
+ .fc-timegrid-col{
+  display: none;
+ }
+.custom-content3{
+  height: 100%;
+  font-size: large;
+  font-weight: bold;
+}
+
+button:focus{
+  border: none !important;
+  box-shadow:none !important;
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+  background-color: #4B419F;
+  color: rgb(255, 255, 255);
+  border-radius: 11px;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus, .fc .fc-button-primary:not(:disabled):active:focus {
+  box-shadow:none !important;
 }
