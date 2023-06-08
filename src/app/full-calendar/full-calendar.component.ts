@@ -35,10 +35,13 @@ export class FullCalendarComponent {
       dayHeaderFormat: { weekday: 'short', day: 'numeric' },
       viewDidMount: (args) => {
         const axisFrameDiv = document.querySelector('.fc-timegrid-axis-frame') as HTMLElement;
-        axisFrameDiv.innerHTML = '<div class="custom-content">Employee</div>';
+        if (axisFrameDiv) {
+          axisFrameDiv.innerHTML = '<div class="custom-content">Employee</div>';
+        }
         const headerToolbar = document.querySelector('.fc-toolbar-chunk') as HTMLElement;
-        headerToolbar.insertAdjacentHTML('afterbegin', '<div class="custom-content2">Planning</div>');
-
+        if(headerToolbar){
+          headerToolbar.insertAdjacentHTML('afterbegin', '<div class="custom-content2">Planning</div>');
+        }
         this.calendar = args.view.calendar as Calendar;
       },
       customButtons: {
